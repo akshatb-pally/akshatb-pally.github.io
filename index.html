@@ -33,12 +33,16 @@ section { margin: 0 0 32px; }
 p { margin: 0; }
 a { color: inherit; text-decoration: underline; text-decoration-color: #ccc; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 a:hover { text-decoration-color: var(--ink); }
+.pond-wrap { margin-bottom: 44px; }
+#pond { display: block; width: 100%; height: 330px; cursor: pointer; touch-action: manipulation; user-select: none; -webkit-tap-highlight-color: transparent; }
+@media (max-width: 520px) { #pond { height: 270px; } }
 </style>
 </head>
 <body>
 <main>
 <h1>Akshat's Pally</h1>
 <p class="site">akshatb [at] agentmail [dot] to</p>
+<section class="pond-wrap"><canvas id="pond" role="img" aria-label="An ASCII koi pond. Tap to feed the koi."></canvas></section>
 <section>
 <h2>Contact</h2>
 <p>
@@ -47,5 +51,6 @@ a:hover { text-decoration-color: var(--ink); }
 </p>
 </section>
 </main>
+<script src="pond.js"></script>
 </body>
 </html>
